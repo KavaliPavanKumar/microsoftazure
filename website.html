@@ -1,471 +1,339 @@
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Healthbook</title>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
 
-    <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-    <!-- custom css file link  -->
-    <link rel="stylesheet" href="css/style.css">
-
-</head>
-<body>
+    <title></title>
     
-<!-- header section starts  -->
+    <style type="text/css">
+      ul
+      {
+        float:left;
+        list-style-type: none;
+      }
+      a
+      {
+        text-decoration: none;
+        color: black;
+      }
+      li a:hover,h5 b:hover
+      {
+        text-decoration: none;
+        color:white;
+      }
+      .col-md-5,.col-md-2,.col-md-3
+      {
+        margin-top: 15px;
+      }
+      h5
+      {
+        font-size: medium;
+      }
+      .col-md-3:hover
+      {
+        background-color: honeydew;
+        transition-duration: 0.5s;
+        transform: scale(1.1); 
+        border-radius: 16px;
+        box-shadow: 0 10px 6px -6px black;
+      }
+
+
+
+/*-------------------------------------------------CM Message Section Css Starts Here-------------------------------------------------*/
+
+#cm-wrapper
+{
+	width: 100%;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	background: #63c5da;
+}
+
+.cm-block
+{
+	padding: 20px 0 25px 0;
+	width: 1007px;
+	margin: 0 auto;
+}
+
+.cm
+{
+	padding: 15px 5px 15px 5px;
+	margin: 0 0 0 0;
+	border-bottom: 1px dotted #FFFFFF;
+	width: 1007px;	
+	float: left;
+}
+
+.cm .pic
+{
+	width: 90px;
+	float: left;
+	margin: 0 0 0 0;
+	padding: 10px 0 0 0;
+}
+
+.cm .text
+{
+	width: 900px;
+	float: left;
+	margin: 0 0 0 10px;
+	padding: 0 0 0 0;
+}
+
+.cm .text h1
+{
+	font-family: Arial;
+	font-size: 15px;
+	font-weight: bold;
+	color: #f2f0f1;
+	text-transform: none;
+	text-decoration: none;
+	text-align: left;
+	display: block;
+}
+
+.cm .text p
+{
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: normal;
+	color: #f1f1f1;
+	text-transform: none;
+	text-decoration: none;
+	text-align: justify;
+	display: block;
+}
+
+.cm .text p a
+{
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: normal;
+	color: #f1f1f1;
+	text-transform: none;
+	text-decoration: underline;
+}
+
+.cm .text p a:hover
+{
+	color: #f1f1f1;
+	text-decoration: none;
+}
+
+.cm .text .readmore
+{
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: normal;
+	color: #f1f1f1;
+	text-transform: none;
+	text-decoration: none;
+	text-align: right;
+	display: block;
+}
+
+.cm .text .readmore a
+{
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: normal;
+	color: #d8d6d7;
+	text-transform: none;
+	text-decoration: none;
+	text-align: right;
+}
+
+.cm .text .readmore a:hover
+{
+	color: #d8d6d7;
+	text-decoration: underline;
+}
+
+
+
+    </style>
+
+    <script type="text/javascript" src="../js/time.js"></script>
 
-<header class="header">
-
-    <a href="#" class="logo"> <img src="healthbook.ico" width="25" height="25"></i> HealthBook </a>
-
-    <nav class="navbar">
-        <a href="#home">Home</a>
-        <a href="#services">Services</a>
-        <a href="aboutusinfo">About</a>
-        <a href="#doctors">Doctors</a>
-        <a href="#book">Appointment</a>
-        <a href="healthcare">Health Care</a>
-        <a href="#review">Review</a>
-        <a href="#blogs">Blogs</a>
-        <a href="profile.php">Profile</a>
-
-        <a href="Logout.php" class="f90-logout-button">Logout</a>
-    </nav>
-
-    <div id="menu-btn" class="fas fa-bars"></div>
-
-</header>
-<!-- home section starts  -->
-
-<section class="home" id="home">
-
-    <div class="image">
-        <img src="image/home-img.svg" alt="">
-    </div>
-
-    <div class="content">
-        <h3>stay safe, stay healthy</h3>
-        <p>Stay tuned and connect to the community.Any queries!!!</p>
-        <a href="#" class="btn"> contact us <span class="fas fa-chevron-right"></span> </a>
-    </div>
-
-</section>
-
-<!-- home section ends -->
-
-<!-- icons section starts  -->
-
-<section class="icons-container">
-
-    <div class="icons">
-        <i class="fas fa-user-md"></i>
-        <h3>140+</h3>
-        <p>doctors at work</p>
-    </div>
-
-    <div class="icons">
-        <i class="fas fa-users"></i>
-        <h3>1040+</h3>
-        <p>satisfied patients</p>
-    </div>
-
-    <div class="icons">
-        <i class="fas fa-procedures"></i>
-        <h3>500+</h3>
-        <p>bed facility</p>
-    </div>
-
-    <div class="icons">
-        <i class="fas fa-hospital"></i>
-        <h3>80+</h3>
-        <p>available hospitals</p>
-    </div>
-
-</section>
-
-<!-- icons section ends -->
-
-<!-- services section starts  -->
-
-<section class="services" id="services">
-
-    <h1 class="heading"> our <span>services</span> </h1>
-
-    <div class="box-container">
-
-        <div class="box">
-            <i class="fas fa-notes-medical"></i>
-            <h3>Hospital Registration</h3>
-            <p></p>
-            <a href="#" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
-        </div>
-
-        <div class="box">
-            <i class="fas fa-ambulance"></i>
-            <h3>24/7 ambulance</h3>
-            <p></p>
-            <a href="#" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
-        </div>
-
-        <div class="box">
-            <i class="fas fa-user-md"></i>
-            <h3>Doctor Login</h3>
-            <p></p>
-            <a href="#" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
-        </div>
-
-        <div class="box">
-            <i class="fas fa-pills"></i>
-            <h3>medicines</h3>
-            <p></p>
-            <a href="#" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
-        </div>
-
-        <div class="box">
-            <i class="fas fa-procedures"></i>
-            <h3>bed facility</h3>
-            <p></p>
-            <a href="#" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
-        </div>
-
-        <div class="box">
-            <i class="fas fa-heartbeat"></i>
-            <h3>total care</h3>
-            <p>in our hands</p>
-            <a href="#" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- services section ends -->
-
-<!-- about section starts  -->
-
-<section class="about" id="about">
-
-    <h1 class="heading"> <span>about</span> us </h1>
-
-    <div class="row">
-
-        <div class="image">
-            <img src="image/about-img.svg" alt="">
-        </div>
-
-        <div class="content">
-            <h3>we take care of your healthy life</h3>
-            <p>healthbook provides health care facilities </p>
-            <p>it provides health record saving facilities</p>
-            <a href="#" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- about section ends -->
-
-<!-- doctors section starts  -->
-
-<section class="doctors" id="doctors">
-
-    <h1 class="heading"> our <span>doctors</span> </h1>
-
-    <div class="box-container">
-
-        <div class="box">
-            <img src="image/doc-1.jpg" alt="">
-            <h3>john deo</h3>
-            <span>expert doctor</span>
-            <div class="share">
-                <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-instagram"></a>
-                <a href="#" class="fab fa-linkedin"></a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="image/doc-2.jpg" alt="">
-            <h3>john deo</h3>
-            <span>expert doctor</span>
-            <div class="share">
-                <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-instagram"></a>
-                <a href="#" class="fab fa-linkedin"></a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="image/doc-3.jpg" alt="">
-            <h3>john deo</h3>
-            <span>expert doctor</span>
-            <div class="share">
-                <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-instagram"></a>
-                <a href="#" class="fab fa-linkedin"></a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="image/doc-4.jpg" alt="">
-            <h3>john deo</h3>
-            <span>expert doctor</span>
-            <div class="share">
-                <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-instagram"></a>
-                <a href="#" class="fab fa-linkedin"></a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="image/doc-5.jpg" alt="">
-            <h3>john deo</h3>
-            <span>expert doctor</span>
-            <div class="share">
-                <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-instagram"></a>
-                <a href="#" class="fab fa-linkedin"></a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="image/doc-6.jpg" alt="">
-            <h3>john deo</h3>
-            <span>expert doctor</span>
-            <div class="share">
-                <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-instagram"></a>
-                <a href="#" class="fab fa-linkedin"></a>
-            </div>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- doctors section ends -->
-
-<!-- booking section starts   -->
-
-<section class="book" id="book">
-
-    <h1 class="heading"> <span>book</span> now </h1>    
-
-    <div class="row">
-
-        <div class="image">
-            <img src="image/book-img.svg" alt="">
-        </div>
-
-        <form action="">
-            <h3>book appointment</h3>
-            <input type="text" placeholder="your name" class="box">
-            <input type="number" placeholder="your number" class="box">
-            <input type="email" placeholder="your email" class="box">
-            <input type="date" class="box">
-            <input type="submit" value="book now" class="btn">
-        </form>
-
-    </div>
-
-</section>
-
-<!-- booking section ends -->
-
-<!-- review section starts  -->
-
-<section class="review" id="review">
     
-    <h1 class="heading"> client's <span>review</span> </h1>
 
-    <div class="box-container">
+  </head>
 
-        <div class="box">
-            <img src="image/pic-1.png" alt="">
-            <h3>john deo</h3>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-            </div>
-            <p class="text">our team!</p>
-        </div>
+  <body style="background-color: #c3e3e8;" onload="displayTime();">
+    
+	  <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+	  <link rel="stylesheet" type="text/css" href="../css/index.css">
+               
 
-        <div class="box">
-            <img src="image/pic-2.png" alt="">
-            <h3>john deo</h3>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-            </div>
-            <p class="text">our facilioties!</p>
-        </div>
 
-        <div class="box">
-            <img src="image/pic-3.png" alt="">
-            <h3>john deo</h3>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-            </div>
-            <p class="text">our specialities!</p>
-        </div>
 
+    <!-- .....................................  Header codes start here  ................................................... -->
+
+    <?php
+    include ('../includes/header.php') ;
+  ?>
+<!-- .............................................  Header codes end here ..................................................... -->
+ 
+ </div> <!-- ap-container -->
+            </div> <!-- top-header -->
+            <div style="display: inline-flex; background:#2979ff none repeat scroll 0 0; height: 35px; width:100%; margin-bottom:2px;">
+                <div style="width: 10%; font-size: 14px; color:#fff; background-color: #DD1274; font-weight:bold; padding: 8px 12px;">LATEST NEWS</div>
+                <div style="font-size: 16px; padding: 6px 0px; width:90%; color:#fff; background-color: #63c5da; ">
+					<marquee scrollamount="3.5" scrolldelay="1" onMouseOver="this.stop()" onMouseOut="this.start()" direction="left">
+                    <ul>						  <li style="display: inline-block; color: #fff;">
+							&nbsp;&nbsp;&nbsp;<span style="color:#fff; font-weight: bold;">1 .</span>&nbsp;<span></span>&nbsp;&nbsp;<a style="color: #fff; font-weight: bold; text-decoration: none; font-size: 20px; line-height: 16px;" href="#">HealthBook New Update&nbsp;&nbsp;<img src="#" style="vertical-align: baseline;"></a>
+</li>		      
+</ul></marquee>
+</div>
+</div>
+<!-- Developer Message Section Starts Here -->
+	<div id="cm-wrapper" background:#2979ff>
+	<div class="cm-block">
+		<marquee behavior="scroll" scrollamount="1.5" height="150px" onmouseover="this.stop();" onmouseout="this.start();" direction="up" loop="-1" background:#2979ff>
+			<div class="cm">
+				<div class="pic">
+					<! -- <img src="" width="82px" height="89px" /> 
+				</div>
+				<div class="text">
+					<h1>DEVELOPER'S MESSAGE</h1>
+					<p><strong>"HEALTHBOOK DEVELOPMENT IS OUR DREAM"</strong><br />The proposed software product is the HealthBook. .</p>
+					<p>This System will be used in any hospital,clinic,dispensory or pathology labs.Clinic, dispensary or pathology to get the information from the patients andd then storing the data for future usages.</p>
+					<p>This system will be included with the nearby hospitals , labs ,diagnosis centers and the nearby ambulance serrvices.</p>
+					<p>By using this system the health records can be maintained efficiently and securely.</p>
+					<p><strong>R Nagi Reddy,KEC<br />Founder & Developer</strong></p>
+				</div>
+				<div class="clear-both"></div>
+			</div>
+		</marquee>
+		<div class="clear-both"></div>
+	</div>	</div>
+</div><!--Developer  Message Section Ends Here -->
+<br>
+<br>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3" onclick="location.href='patient.html'">
+          <div class="thumbnail tk"><img src="../images/patient1.png"></div><br>
+          <h4>Patient</h4>
+          <p>Finding your disease or is quick appointment. Create your solutions.</p>
+          <a href="#" class="readmore">View Details</a><hr>
+        </div><!-- end of col-md-4 -->
+
+        <div class="col-md-3" onclick="location.href='doctor.php'">
+          <div class="thumbnail tk"><img src="../images/doctor1.png"></div><br>
+          <h4>Doctor</h4>
+          <p>We manually validate every patient to ensure you the best.</p>
+          <a href="#" class="readmore">View Details</a><hr>
+        </div><!-- end of col-md-4 -->
+
+        <div class="col-md-3" onclick="location.href='stakeholder.html'">
+          <div class="thumbnail tk"><img src="../images/stakeholder.png"></div><br>
+          <h4>Stakeholder</h4>
+          <p>We manually provided every human to ensure insurance best.</p>
+          <a href="#" class="readmore">View Details</a><hr>
+        </div><!-- end of col-md-4 -->
+
+        <div class="col-md-3" onclick="location.href='hospitallogin.php'">
+          <div class="thumbnail tk"><img src="../images/hospital.png"></div><br>
+          <h4>Hospital</h4>
+          <p>Our dedicated service team help to you every step of the way.</p>
+          <a href="#" class="readmore">View Details</a><hr>
+        </div><!-- end of col-md-4 -->
+      </div><!--end of row--><br><br>
+    
+  
+<div class="container">
+      <div class="row">
+<div class="col-md-3" onclick="location.href='#'">
+          <div class="thumbnail tk"><img src="../images/medical.jpg" width="70" height="70"></div><br>
+          <h4>Medical stores</h4>
+          <p>Medical stores login for medicine distribution.</p>
+          <a href="medicalstore.html" class="readmore">View Details</a><hr>
+        </div><!-- end of col-md-4 -->
+   
+
+<div class="col-md-3" onclick="location.href='#'">
+          <div class="thumbnail tk"><img src="../images/lab.jpg" width="70" height="70"></div><br>
+          <h4>Laboratories</h4>
+          <p>Laboratories for disease identification and blood check ups.</p>
+          <a href="#" class="readmore">View Details</a><hr>
+        </div><!-- end of col-md-4 -->
+<div class="col-md-3" onclick="location.href='#'">
+          <div class="thumbnail tk"><img src="../images/chat.png" width="70" height="70"></div><br>
+          <h4>Chat Rooms</h4>
+          <p>Chat with the community to know more.</p>
+          <a href="../chat/" class="readmore">View Details</a><hr>
+        </div><!-- end of col-md-4 -->
+<div class="col-md-3" onclick="location.href='#'">
+          <div class="thumbnail tk"><img src="../images/foodm.jpg" width="70" height="70"></div><br>
+          <h4>Food Medicine</h4>
+          <p>Different food used for different Disesses</p>
+          <a href="https://www.healthline.com/nutrition/food-as-medicine" class="readmore">View Details</a><hr>
+        </div><!-- end of col-md-4 -->
     </div>
+      </div><!--end of row--><br><br>
 
-</section>
+<div class="container"><div class="row"> 
+<p style="background-color: grey; color: #f1f1f1; font-weight: bold">
+      Quick Explore Nearby locations...
+</p>
+</div><!--end of row--><br><br>
+<div class="container">
+      <div class="row">
+<div class="col-md-3" onclick="location.href='#'">
+          <div class="thumbnail tk"><img src="../images/nearbyh.png" width="70" height="70"></div><br>
+          <h4>Hospitals</h4>
+          <p>Find the hospitals in  your locality and explore.</p>
+          <a href="https://www.google.co.in/maps/search/nearby+hospitals/" class="readmore">Show</a><hr>
+        </div><!-- end of col-md-4 -->
 
-<!-- review section ends -->
+<div class="col-md-3" onclick="location.href='#'">
+          <div class="thumbnail tk"><img src="../images/nearbym.jpg" width="70" height="70"></div><br>
+          <h4>Pharmacies</h4>
+          <p>Find nearby medical stores and pharmacies
+ </p>
+          <a href="https://www.google.co.in/maps/search/medical+stores+near+me/" class="readmore">Show</a><hr>
+        </div><!-- end of col-md-4 -->
 
-<!-- blogs section starts  -->
+<div class="col-md-3" onclick="location.href='#'">
+          <div class="thumbnail tk"><img src="../images/nearbyd.png" width="70" height="70"></div><br>
+          <h4>Diagnosis centers </h4>
+          <p>Find nearby diagnosis centers MRI,X ray
+ </p>
+          <a href="https://www.google.co.in/maps/search/diagnosis+centersnear+me/" class="readmore">Show</a><hr>
+        </div><!-- end of col-md-4 -->
 
-<section class="blogs" id="blogs">
+<div class="col-md-3" onclick="location.href='#'">
+          <div class="thumbnail tk"><img src="../images/nearbya.jpg" width="70" height="70"></div><br>
+          <h4>Ambulance Services</h4>
+          <p>Find nearby ambulance services in emergencies
+ </p>
+          <a href="https://www.google.co.in/maps/search/ambulance+services+near+me/" class="readmore">Show</a><hr>
+        </div><!-- end of col-md-4 -->
+</div><!--end of row--><br><br>
+</div>
+</div>
+</div>
+</div></div>
+<br>
+<br>
 
-    <h1 class="heading"> our <span>blogs</span> </h1>
+    <link rel="stylesheet" type="text/css" href="css/footer.css"  />
+    
+    <!-- ..................................  Footer-Section starts here .............................................. -->
 
-    <div class="box-container">
+    <?php
+    include ('../includes/footer.php') ;
+  ?>
 
-        <div class="box">
-            <div class="image">
-                <img src="image/blog-1.jpg" alt="">
-            </div>
-            <div class="content">
-                <div class="icon">
-                    <a href="#"> <i class="fas fa-calendar"></i> 27-11-22 </a>
-                    <a href="#"> <i class="fas fa-user"></i> by admin </a>
-                </div>
-                <h3>blog title goes here</h3>
-                <p>we provide health facilities</p>
-                <a href="#" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="image/blog-2.jpg" alt="">
-            </div>
-            <div class="content">
-                <div class="icon">
-                    <a href="#"> <i class="fas fa-calendar"></i> 1st may, 2021 </a>
-                    <a href="#"> <i class="fas fa-user"></i> by admin </a>
-                </div>
-                <h3>blog title goes here</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, eius.</p>
-                <a href="#" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="image/blog-3.jpg" alt="">
-            </div>
-            <div class="content">
-                <div class="icon">
-                    <a href="#"> <i class="fas fa-calendar"></i> 1st may, 2021 </a>
-                    <a href="#"> <i class="fas fa-user"></i> by admin </a>
-                </div>
-                <h3>blog title goes here</h3>
-                <p>doctors</p>
-                <a href="#" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
-            </div>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- blogs section ends -->
-
-<!-- footer section starts  -->
-
-<section class="footer">
-
-    <div class="box-container">
-
-        <div class="box">
-            <h3>quick links</h3>
-            <a href="#"> <i class="fas fa-chevron-right"></i> home </a>
-            <a href="#"> <i class="fas fa-chevron-right"></i> services </a>
-            <a href="#"> <i class="fas fa-chevron-right"></i> about </a>
-            <a href="#"> <i class="fas fa-chevron-right"></i> doctors </a>
-            <a href="#"> <i class="fas fa-chevron-right"></i> book </a>
-            <a href="#"> <i class="fas fa-chevron-right"></i> review </a>
-            <a href="#"> <i class="fas fa-chevron-right"></i> blogs </a>
-        </div>
-
-        <div class="box">
-            <h3>our services</h3>
-            <a href="#"> <i class="fas fa-chevron-right"></i> Health Gadgets </a>
-            <a href="#"> <i class="fas fa-chevron-right"></i> Medicine Door Delivery </a>
-            <a href="#"> <i class="fas fa-chevron-right"></i> Labs </a>
-            <a href="#"> <i class="fas fa-chevron-right"></i> Doctor consultancies </a>
-            <a href="#"> <i class="fas fa-chevron-right"></i> ambulance service </a>
-        </div>
-
-        <div class="box">
-            <h3>contact info</h3>
-            <a href="#"> <i class="fas fa-phone"></i> +91 8106975810 </a>
-            <a href="#"> <i class="fas fa-phone"></i> +91 8106061168 </a>
-            <a href="#"> <i class="fas fa-envelope"></i> nagireddykiran4@gmail.com </a>
-            <a href="#"> <i class="fas fa-envelope"></i> healthbookproject2022@gmail.com </a>
-            <a href="#"> <i class="fas fa-map-marker-alt"></i> 3-286,somandepalli(m)(v),Sathya sai district,AP-515122 </a>
-        </div>
-
-        <div class="box">
-            <h3>follow us</h3>
-            <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
-            <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
-            <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
-            <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
-            <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
-            <a href="#"> <i class="fab fa-pinterest"></i> pinterest </a>
-        </div>
-
-    </div>
-
-    <div class="credit"> created by <span>k pavan kumar</span> | all rights reserved </div>
-
-</section>
-
-<!-- footer section ends -->
+    <!-- ........................................  Footer-Section ends here  ......................................... -->
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- custom js file link  -->
-<script src="js/script.js"></script>
-
-</body>
+  </body>
 </html>
